@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <!--navbar-->
+  <nav class="navbar navbar-expand-lg  navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="nav-item">
+            <a class="nav-link " href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#project">Project</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+      </div>
+    </div>
+  </nav>
+  <!--home section-->
+  <section id="home">
+    <p class="text-center"> I am a <span> Artist</span></p>
+    <p class="text-center"> I am a <span>Freelancer</span> </p>
+    <p class="text-center"> I am a <span> Graphic designer</span></p>
+  </section>
+  <!--about-->
+  <section id="about">
+
+    <div class="row">
+      <div class="column" style="background-color:black;">
+
+        <img src="img/img-1.jpg" alt="profile" class="aboutimg">
+      </div>
+      <div class="column" style="background-color:black;">
+        <h2>About</h2>
+        <p>I'm Yuvarani, I have huge respect and love for the potraits drawn by Macro Mazzoni. The potraits done by him
+          insprired me mentally and made me choose art as my profession as well as my passion and I'm focused on
+          creating pencil design, watercolor painting, poster design,watercolour painting,poster design,for more
+          information follow me on @uv.artworks.</p>
+      </div>
+    </div>
+
+  </section>
+  skill section
+  <section id="skills">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
+    <!-- <h1> skills</h1> -->
+    <div class="body">
+     
+    <div class="wrapper">
+      <div class="card pencilpotrait">
+        <div class="circle">
+          <div class="bar"></div>
+          <div class="box"><span></span></div>
+        </div>
+        <div class="text">Pencil Portrait</div>
+      </div>
+      <div class="card watercolor">
+        <div class="circle">
+          <div class="bar"></div>
+          <div class="box"><span></span></div>
+        </div>
+        <div class="text">Water Color Painting</div>
+      </div>
+      
+      <div class="card logodesign ">
+        <div class="circle">
+          <div class="bar"></div>
+          <div class="box"><span></span></div>
+        </div>
+        <div class="text">Logo Desigining</div>
+      </div>
+   
+    <div class="card oilpainting ">
+      <div class="circle">
+        <div class="bar"></div>
+        <div class="box"><span></span></div>
+      </div>
+      <div class="text">Oil Painting</div>
+    </div>
+   
+   <div class="card graphicdesign">
+    <div class="circle">
+      <div class="bar"></div>
+      <div class="box"><span></span></div>
+    </div>
+    <div class="text">Graphic Design</div>
+   </div>
+   <div class="card posterdesign">
+    <div class="circle">
+      <div class="bar"></div>
+      <div class="box"><span></span></div>
+    </div>
+    <div class="text">Poster Design</div>
+   </div>
+   
+</div>
+</div>
+</section>
+<script>
+      let options = {
+        startAngle: -1.55,
+        size: 150,
+        value: 0.60,
+        fill: {gradient: ['black', 'grey']}
+      }
+      $(".circle .bar").circleProgress(options).on('circle-animation-progress',
+      function(event, progress, stepValue){
+        $(this).parent().find("span").text(String(stepValue.toFixed(2).substr(2)) + "%");
+      });
+      $(".watercolor .bar").circleProgress({
+        value: 0.90  
+      });
+      $(".graphicdesign .bar").circleProgress({
+        value: 0.70
+      });
+      $(".logodesign.bar").circleProgress({
+        value: 0.75
+      });
+      $(".oilpainting .bar").circleProgress({
+        value: 0.80
+      });
+      $(".pencilpotrait .bar").circleProgress({
+        value: 0.95
+      });
+      $(".posterdesign.bar").circleProgress({
+        value: 0.85
+      });
+    </script>
+    </section> 
+
+  <!-- Project section-->
+  <section id="project">
+    <h1> Projects</h1>
+    <div class="container">
+      
+      <img src="img/img-2.jpg" alt="">
+      <img src="img/img-3.jpg" alt="">
+      <img src="img/img-4.jpg" alt="">
+      <img src="img/img-5.jpg" alt="">
+      <img src="img/img-6.jpg" alt="">
+      <img src="img/img-7.jpg" alt="">
+      <img src="img/img-8.jpg" alt="">
+      <img src="img/img-9.jpg" alt="">
+      
+    </div>
+</section>
+
+
+  <!--contact section-->
+  <section id="contact">
+
+    <div class="Contact-container">
+      <form method="post" action="mailto:arthiraman2002@gmail.com">
+        <h3> Get in Touch</h3>
+        <input type="text" name="name" id="name" placeholder="Your Name" required>
+        <input type="email" name="email" id="email" placeholder="Your email ID" required>
+        <textarea name=" text" id="msg"  rows="4" placeholder="How can we help you"></textarea>
+        <button type="submit"> send</button>
+      </form>
+
+    </div>
+    
+  </section>
+
+  </body>
+</html>
